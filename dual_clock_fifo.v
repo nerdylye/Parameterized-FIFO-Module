@@ -157,4 +157,22 @@ module fifo_mode_rw
     end
   end
 
+  ram 
+  #( .SIZE(DEPTH_WIDTH),
+     .WIDTH(DATA_WIDTH),
+     .ADDR(ADDR)
+       )
+   ram
+     (
+      .wr_clk			(wr_clk),
+      .rd_clk         	(rd_clk),
+      .rd_dataout	(rd_data),
+      .rd_addr		(read_pointer),
+      .rd_en	(rdreq),
+      .wr_addr		(write_pointer),
+      .wr_en	(wrreq),
+      .wr_datain		(data),
+      .reset			(reset)
+      );
+
 endmodule
