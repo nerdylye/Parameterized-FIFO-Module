@@ -1,5 +1,5 @@
 module ram
-#(parameter SIZE = NUM*1024,
+#(parameter SIZE = 1024,
   parameter WIDTH = 8,
   parameter ADDR = 13)
 (
