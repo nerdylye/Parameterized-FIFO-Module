@@ -1,4 +1,4 @@
-module fifo_mode_rw
+module dual_clock_fifo
   #(
     parameter DEPTH_WIDTH = 1024, // words
     parameter DATA_WIDTH = 8,      // bits
